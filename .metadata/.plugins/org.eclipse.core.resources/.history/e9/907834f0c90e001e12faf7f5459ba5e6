@@ -1,0 +1,62 @@
+package Vistas;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.SwingConstants;
+import javax.swing.JButton;
+
+public class ventanaPrincipal extends JFrame implements ActionListener{
+
+	private JPanel contentPane;
+
+	public ventanaPrincipal() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(800, 500);
+		setLocationRelativeTo(null);
+		iniciar();
+
+	}
+
+	public void iniciar() {
+
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNombre = new JLabel("");
+		lblNombre.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNombre.setBounds(62, 63, 163, 39);
+		contentPane.add(lblNombre);
+		
+		JLabel lblCiudad = new JLabel("Armenia Quindio");
+		lblCiudad.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCiudad.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblCiudad.setBounds(280, 63, 163, 39);
+		contentPane.add(lblCiudad);
+		
+		JButton btnOcultarNombre = new JButton("Ocular Nombre");
+		btnOcultarNombre.setBounds(86, 147, 121, 23);
+		btnOcultarNombre.addActionListener(this);
+		contentPane.add(btnOcultarNombre);
+		
+		JButton btnOcultarCiudad = new JButton("Ocultar Ciudad");
+		btnOcultarCiudad.setBounds(306, 147, 112, 23);
+		contentPane.add(btnOcultarCiudad);
+		
+		JButton btnVerNombre = new JButton("Visualizar Nombre");
+		btnVerNombre.setBounds(86, 113, 121, 23);
+		contentPane.add(btnVerNombre);
+		
+		JButton btnVerCiudad = new JButton("Visualizar Ciudad");
+		btnVerCiudad.setBounds(306, 113, 112, 23);
+		contentPane.add(btnVerCiudad);
+
+	}
+}

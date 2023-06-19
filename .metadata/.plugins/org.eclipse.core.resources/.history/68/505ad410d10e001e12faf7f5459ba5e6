@@ -1,0 +1,29 @@
+package Vistas;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+public class EventosTeclado extends JFrame {
+
+	private JPanel contentPane;
+
+	public EventosTeclado() {
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(450, 300);
+		setLocationRelativeTo(null);
+
+	}
+
+	public void iniciar() {
+
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+	}
+
+}

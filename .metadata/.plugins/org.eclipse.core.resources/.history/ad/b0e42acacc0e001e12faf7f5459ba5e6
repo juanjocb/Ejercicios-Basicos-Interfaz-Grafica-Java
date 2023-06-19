@@ -1,0 +1,14 @@
+package Principal;
+
+import java.awt.EventQueue;
+
+import Vistas.OcultarYVisualizar;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		new OcultarYVisualizar().setVisible(true);
+		new PasarInformacion().setVisible(true)
+	}
+}

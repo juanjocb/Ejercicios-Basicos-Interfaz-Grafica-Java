@@ -1,0 +1,88 @@
+package Vistas;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.SwingConstants;
+import javax.swing.JButton;
+
+public class ventanaPrincipal extends JFrame implements ActionListener{
+
+	private JPanel contentPane;
+	private JLabel lblNombre;
+	private JLabel lblCiudad;
+	private JButton btnOcultarNombre;
+	private JButton btnOcultarCiudad;
+	private JButton btnVerNombre;
+	private JButton btnVerCiudad;
+
+	public ventanaPrincipal() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(800, 500);
+		setLocationRelativeTo(null);
+		iniciar();
+
+	}
+
+	public void iniciar() {
+
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		lblNombre = new JLabel("Juan Jose Cañas");
+		lblNombre.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNombre.setBounds(62, 63, 163, 39);
+		contentPane.add(lblNombre);
+		
+		lblCiudad = new JLabel("Armenia Quindio");
+		lblCiudad.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCiudad.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblCiudad.setBounds(280, 63, 163, 39);
+		lblCiudad.setVisible(false);
+		contentPane.add(lblCiudad);
+		
+		btnOcultarNombre = new JButton("Ocular Nombre");
+		btnOcultarNombre.setBounds(72, 147, 143, 23);
+		btnOcultarNombre.addActionListener(this);
+		contentPane.add(btnOcultarNombre);
+		
+		btnOcultarCiudad = new JButton("Ocultar Ciudad");
+		btnOcultarCiudad.setBounds(300, 147, 133, 23);
+		btnOcultarNombre.addActionListener(this);
+		contentPane.add(btnOcultarCiudad);
+		
+		btnVerNombre = new JButton("Visualizar Nombre");
+		btnVerNombre.setBounds(72, 113, 143, 23);
+		btnOcultarNombre.addActionListener(this);
+		contentPane.add(btnVerNombre);
+		
+		btnVerCiudad = new JButton("Visualizar Ciudad");
+		btnVerCiudad.setBounds(300, 113, 133, 23);
+		btnOcultarNombre.addActionListener(this);
+		contentPane.add(btnVerCiudad);
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		if(e.getSource() == btnVerNombre) {
+			
+			lblNombre.setVisible(false);
+		}
+		
+		
+		
+		
+	}
+}
