@@ -1,6 +1,5 @@
 package Principal;
 
-import Vistas.DesactivarComponentesGraficos;
 import Vistas.EventosTeclado;
 import Vistas.OcultarYVisualizar;
 import Vistas.PasarInformacion;
@@ -11,6 +10,6 @@ public class Principal {
 
 //		new OcultarYVisualizar().setVisible(true);
 //		new PasarInformacion().setVisible(true);
-//		new EventosTeclado().setVisible(true);
-		new DesactivarComponentesGraficos().setVisible(true);	}
+		new EventosTeclado().setVisible(true);
+	}
 }

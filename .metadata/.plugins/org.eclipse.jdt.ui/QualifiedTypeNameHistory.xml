@@ -4,4 +4,5 @@
     <fullyQualifiedTypeName name="Vistas.EventosTeclado"/>
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
+    <fullyQualifiedTypeName name="Vistas.DesactivarComponentesGraficos"/>
 </qualifiedTypeNameHistroy>
