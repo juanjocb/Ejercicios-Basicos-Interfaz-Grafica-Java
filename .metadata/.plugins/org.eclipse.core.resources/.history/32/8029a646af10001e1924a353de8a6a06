@@ -1,0 +1,25 @@
+package Principal;
+
+import java.awt.Color;
+
+import Vistas.ColoresYPropEtq;
+import Vistas.DesactivarComponentesGraficos;
+import Vistas.EventMousePos;
+import Vistas.EventosMouse;
+import Vistas.EventosTeclado;
+import Vistas.OcultarYVisualizar;
+import Vistas.PasarInformacion;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+//		new OcultarYVisualizar().setVisible(true);
+//		new PasarInformacion().setVisible(true);
+//		new EventosTeclado().setVisible(true);
+//		new DesactivarComponentesGraficos().setVisible(true);
+//		new EventosMouse().setVisible(true);
+//		new EventMousePos().setVisible(true);
+		new ColoresYPropEtq().setVisible(true);
+	}
+}

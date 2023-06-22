@@ -1,9 +1,15 @@
 package Principal;
 
+import java.awt.Color;
+
+import Vistas.ColoresYPropEtq;
 import Vistas.DesactivarComponentesGraficos;
+import Vistas.EventMousePos;
+import Vistas.EventosMouse;
 import Vistas.EventosTeclado;
 import Vistas.OcultarYVisualizar;
 import Vistas.PasarInformacion;
+import Vistas.notaEstudiantes;
 
 public class Principal {
 
@@ -12,5 +18,10 @@ public class Principal {
 //		new OcultarYVisualizar().setVisible(true);
 //		new PasarInformacion().setVisible(true);
 //		new EventosTeclado().setVisible(true);
-		new DesactivarComponentesGraficos().setVisible(true);	}
+//		new DesactivarComponentesGraficos().setVisible(true);
+//		new EventosMouse().setVisible(true);
+//		new EventMousePos().setVisible(true);
+//		new ColoresYPropEtq().setVisible(true);
+		new notaEstudiantes().setVisible(true);
+	}
 }
