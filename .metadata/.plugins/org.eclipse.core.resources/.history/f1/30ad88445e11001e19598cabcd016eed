@@ -1,0 +1,73 @@
+package Vistas;
+
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import java.awt.BorderLayout;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import javax.swing.JButton;
+
+public class ConcatenarDatos extends JFrame implements ActionListener{
+
+	private JPanel contentPane;
+	private JTextField txtTexto2;
+	private JTextField txtTexto1;
+	private JLabel lblConcatenacion;
+
+	public ConcatenarDatos() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 476, 314);
+		getContentPane().setLayout(null);
+
+		txtTexto2 = new JTextField();
+		txtTexto2.setBounds(236, 82, 187, 37);
+		getContentPane().add(txtTexto2);
+		txtTexto2.setColumns(10);
+
+		txtTexto1 = new JTextField();
+		txtTexto1.setColumns(10);
+		txtTexto1.setBounds(236, 30, 187, 37);
+		getContentPane().add(txtTexto1);
+
+		JLabel lblNewLabel = new JLabel("Texto 1");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(80, 35, 146, 26);
+		getContentPane().add(lblNewLabel);
+
+		JLabel lblTexto = new JLabel("Texto 2");
+		lblTexto.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTexto.setBounds(80, 87, 146, 26);
+		getContentPane().add(lblTexto);
+
+		lblConcatenacion = new JLabel("");
+		lblConcatenacion.setBounds(65, 162, 335, 66);
+		getContentPane().add(lblConcatenacion);
+		
+		JButton btnConcatena = new JButton("Concatenar");
+		btnConcatena.setBounds(334, 130, 89, 23);
+		getContentPane().add(btnConcatena);
+
+	}
+
+	public void iniciar() {
+
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+		
+	}
+}

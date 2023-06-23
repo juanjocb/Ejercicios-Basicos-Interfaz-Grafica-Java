@@ -1,0 +1,82 @@
+package Principal;
+
+import java.awt.Color;
+
+import javax.swing.JOptionPane;
+
+import Vistas.ColoresYPropEtq;
+import Vistas.ConcatenarDatos;
+import Vistas.DesactivarComponentesGraficos;
+import Vistas.EventMousePos;
+import Vistas.EventMouseYAsigValores;
+import Vistas.EventosMouse;
+import Vistas.EventosTeclado;
+import Vistas.OcultarYVisualizar;
+import Vistas.PasarInformacion;
+import Vistas.notaEstudiantes;
+
+public class Principal {
+
+	public static void iniciar() {
+
+		int opc = 0;
+
+		String msj = "****MENU****";
+		msj += "1. Ocultar y Visualizar componentes gráficos.\n";
+		msj += "2. Pasar información entre componentes gráficos.\n";
+		msj += "3. Eventos del teclado.\n";
+		msj += "4. Eventos del Mouse.\n";
+		msj += "5. Eventos del Mouse y posicionamiento.\n";
+		msj += "6. Manejo de Colores y propiedades de las etiquetas.\n";
+		msj += "7. Nota de estudiantes.\n";
+		msj += "8. Concatenar Datos.\n";
+
+		do {
+			opc = Integer.parseInt(JOptionPane.showInputDialog(msj));
+			menu(opc);
+		} while (opc != 9);
+	}
+
+	public static void menu(int opc) {
+
+		switch (opc) {
+		case 1:
+			new OcultarYVisualizar().setVisible(true);
+			break;
+		case 2:
+			new PasarInformacion().setVisible(true);
+			break;
+		case 3:
+			new EventosTeclado().setVisible(true);
+			break;
+		case 4:
+			new DesactivarComponentesGraficos().setVisible(true);
+			break;
+		case 5:
+			new EventosMouse().setVisible(true);
+			break;
+		case 6:
+			new ColoresYPropEtq().setVisible(true);
+			break;
+		case 7:
+			new notaEstudiantes().setVisible(true);
+			break;
+		case 8:
+			new ConcatenarDatos().setVisible(true);
+			break;
+		case 9:
+			new EventMouseYAsigValores().setVisible(true);
+			break;
+		default:
+			JOptionPane.showInputDialog("Opcion incorrecta");
+			break;
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+		iniciar();
+
+	}
+}

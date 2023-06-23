@@ -5,9 +5,13 @@
     <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
     <fullyQualifiedTypeName name="Vistas.DesactivarComponentesGraficos"/>
     <fullyQualifiedTypeName name="Vistas.EventosMouse"/>
-    <fullyQualifiedTypeName name="Vistas.EventMousePos"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="Vistas.ColoresYPropEtq"/>
-    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="Vistas.notaEstudiantes"/>
+    <fullyQualifiedTypeName name="Vistas.ConcatenarDatos"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
+    <fullyQualifiedTypeName name="Vistas.EventMouseYAsigValores"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="Vistas.EventMousePos"/>
 </qualifiedTypeNameHistroy>
